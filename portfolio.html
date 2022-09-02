@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<!--Шапка сайту-->
+<!--Шапка сайтfу-->
 <header class="header">
     <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
     <nav class="header-nav">
         <ul class="list">
             <li class="item"><a class="nav-item" href="./index.html">Студія</a></li>
-            <li class="item"><a class="nav-item" href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a class="nav-item current" href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a class="nav-item" href="#">Контакти</a></li>
         </ul>
     </nav>
@@ -28,62 +28,64 @@
     </ul>
 </header>
 <main>
-    <h1 hidden>Портфоліо</h1>
-    <ul>
-        <li class="item"><button type="button" class="btn-nav">Веб-сайти</button></li>
-        <li class="item"><button type="button" class="btn-nav">Додатки</button></li>
-        <li class="item"><button type="button" class="btn-nav">Усі</button></li>
-        <li class="item"><button type="button" class="btn-nav">Дизайн</button></li>
-        <li class="item"><button type="button" class="btn-nav">Маркетинг</button></li>
-    </ul>
-    <ul>
-        <li class="item portfolio-list">
+    <section>
+        <h1 class="visually-hidden">Портфоліо</h1>
+        <ul>
+            <li class="item"><button type="button" class="btn-nav">Веб-сайти</button></li>
+            <li class="item"><button type="button" class="btn-nav">Додатки</button></li>
+            <li class="item"><button type="button" class="btn-nav">Усі</button></li>
+            <li class="item"><button type="button" class="btn-nav">Дизайн</button></li>
+            <li class="item"><button type="button" class="btn-nav">Маркетинг</button></li>
+        </ul>
+        <ul>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/technokryak.jpg" alt="Технокряк" width="370">
                 <h2 class="portfolio-name">Технокряк</h2>
                 <p class="portfolio-disc">Веб-сайт</p>
-        </li>
-        <li class="item portfolio-list">
-                   <img src="./images/portfolio/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                <h2>Постер New Orlean vs Golden Star</h2>
-                <p>Дизайн</p>
-        </li>
-        <li class="item portfolio-list">
+            </li>
+            <li class="item portfolio-list">
+                <img src="./images/portfolio/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                <h2 class="portfolio-name">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio-disc">Дизайн</p>
+            </li>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood" width="370">
-                <h2>Ресторан Seafood</h2>
-                <p>Додаток</p>
-        </li>
-        <li class="item portfolio-list">
+                <h2 class="portfolio-name">Ресторан Seafood</h2>
+                <p class="portfolio-disc">Додаток</p>
+            </li>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/prime.jpg" alt="Проєкт Prime" width="370">
-                <h2>Проєкт Prime</h2>
-                <p>Маркетинг</p>
-        </li>
-        <li class="item portfolio-list">
+                <h2 class="portfolio-name">Проєкт Prime</h2>
+                <p class="portfolio-disc">Маркетинг</p>
+            </li>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/boxes.jpg" alt="Проєкт Boxes" width="370">
-                <h2>Проєкт Boxes</h2>
-                <p>Додаток</p>
-        </li>
-        <li class="item portfolio-list">
-
+                <h2 class="portfolio-name">Проєкт Boxes</h2>
+                <p class="portfolio-disc">Додаток</p>
+            </li>
+            <li class="item portfolio-list">
+        
                 <img src="./images/portfolio/no-border.jpg" alt="Inspiration has no Borders" width="370">
-                <h2>Inspiration has no Borders</h2>
-                <p>Веб-сайт</p>
-        </li>
-        <li class="item portfolio-list">
+                <h2 class="portfolio-name">Inspiration has no Borders</h2>
+                <p class="portfolio-disc">Веб-сайт</p>
+            </li>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/limited-editional.jpg" alt="Видання Limited Edition" width="370">
-                <h2>Видання Limited Edition</h2>
-                <p>Дизайнт</p>
-        </li>
-        <li class="item portfolio-list">
+                <h2 class="portfolio-name">Видання Limited Edition</h2>
+                <p class="portfolio-disc">Дизайнт</p>
+            </li>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/lab.jpg" alt="Проєкт LAB" width="370">
-                <h2>Проєкт LAB</h2>
-                <p>Маркетинг</p>
-        </li>
-        <li class="item portfolio-list">
+                <h2 class="portfolio-name">Проєкт LAB</h2>
+                <p class="portfolio-disc">Маркетинг</p>
+            </li>
+            <li class="item portfolio-list">
                 <img src="./images/portfolio/growing-business.jpg" alt="Growing Business" width="370">
-                <h2>Growing Business</h2>
-                <p>Додаток</p>
-        </li>
-    </ul>
+                <h2 class="portfolio-name">Growing Business</h2>
+                <p class="portfolio-disc">Додаток</p>
+            </li>
+        </ul>
+    </section>
 </main>
 <!--Футер-->
 <footer class="footer">

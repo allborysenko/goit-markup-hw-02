@@ -1,53 +1,62 @@
 :root {
     --accent: #2196F3;
     --main-text: #212121;
-    --bgc-main: ##F5F5F5;
+    --background-color: #FFFFFF;
     --secondary-text: #757575;
     --white-text: #FFFFFF;
     --black-text: #000000;
     --hero-bgc: #2F303A;
     --bgc-poster: #EEEEEE;
     --bgc-heder: #ECECEC;
+    --bgc-team: #F5F4FA;
 }
 
 body {
 font-family: 'Roboto', sans-serif;
-letter-spacing: 0.02em;
+letter-spacing: 0.03em;
 color: var(--main-text);
+background-color:var(--background-color);
+font-size: 14px;
+font-weight: 400;
 }
-.header {
-    background-color: var(--bgc-heder)
-}
+
 /* Логотип */
 
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-decoration: none;
 }
 .logo-accent {
     color: var(--accent)
 }
-.logo-black {
+.header > a {
     color: var(--black-text);
 }
+
 .logo-white {
     color: var(--white-text);
+}
+.nav-item.current {
+    color: var(--accent);
 }
 
 /* Навигация  */
 
 .header-nav {   
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.143;
-}
+    letter-spacing: 0.02em;
+    }
 .nav-item {
     text-decoration: none;
     color: var(--main-text);
 }
+
+    
+
 .nav-item:hover,
 .nav-item:focus,
 .contact-item:hover,
@@ -63,11 +72,16 @@ color: var(--main-text);
     list-style-type: none;
 }
 .contact-item {
-    color: var(--secondary-text)
+    color: var(--secondary-text);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
 }
 
 .team-member {
-    background-color: #FFFFFF;
+    background-color:var(--background-color);
 }
 
 /* Герой */
@@ -91,31 +105,22 @@ color: var(--main-text);
     font-family: 'Roboto', sans-serif;
     color: var(--white-text);
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.88;
     letter-spacing: 0.06em;
-    /* position: absolute;  ??? виходить за рамки секції*/
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
+    
+}
+.btn:hover,
+.btn:focus {
+    background-color:var(--accent);
 }
 
 .benefit-title {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 1.143;
+    line-height: 1.143;
     text-transform: uppercase;
 }
 .benefits-desc {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: var(--secondary-text);
 }
 .whatwedo, .team-tile {
@@ -123,61 +128,49 @@ color: var(--main-text);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
-}
+    }
 
 .team {
-    background-color: #F5F4FA ;
+    background-color:var(--bgc-team);
 }
 
 .team-item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-}
+    }
 .team-disc {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text);
+        color: var(--secondary-text);
 }
 
 /* Футер */
 .footer {
     background-color: var(--hero-bgc);
 }
+.main-address {
+    font-style: normal;
+}
 .address {
     color: var(--white-text);
     text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
-}
+    line-height: 1.71;
+      }
 .mail {
-    color: var(--secondary-text);
+    color: var(--white-text);
     text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
-}
+    line-height: 1.71;
+   }
 
 .btn-nav {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: inherit;
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
-}
+    }
 
 /* Навигация портфолио  */
 
@@ -200,10 +193,22 @@ color: var(--main-text);
 
 }
 .portfolio-disc {
-         font-weight: 400;
         font-size: 16px;
         line-height: 1.88px;
-        letter-spacing: 0.03em;
         color: var(--secondary-text);
 
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
