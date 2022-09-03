@@ -1,5 +1,6 @@
 :root {
     --accent: #2196F3;
+    --accent-hover: #188CE8;
     --main-text: #212121;
     --background-color: #FFFFFF;
     --secondary-text: #757575;
@@ -9,6 +10,7 @@
     --bgc-poster: #EEEEEE;
     --bgc-heder: #ECECEC;
     --bgc-team: #F5F4FA;
+    --footer-address: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -21,7 +23,6 @@ font-weight: 400;
 }
 
 /* Логотип */
-
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -44,7 +45,6 @@ font-weight: 400;
 }
 
 /* Навигация  */
-
 .header-nav {   
     font-weight: 500;
     line-height: 1.143;
@@ -67,6 +67,7 @@ font-weight: 400;
 .address:focus {
     color: var(--accent)
 }
+
 .item,
 .benefit-item {
     list-style-type: none;
@@ -76,8 +77,7 @@ font-weight: 400;
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.143;
-    letter-spacing: 0.02em;
-
+    text-decoration: none;
 }
 
 .team-member {
@@ -107,11 +107,13 @@ font-weight: 400;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    
+    font-size: 16px; 
 }
+
 .btn:hover,
-.btn:focus {
-    background-color:var(--accent);
+.btn:focus,
+.btn:active {
+    background-color:var(--accent-hover);
 }
 
 .benefit-title {
@@ -128,7 +130,7 @@ font-weight: 400;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    }
+}
 
 .team {
     background-color:var(--bgc-team);
@@ -139,10 +141,11 @@ font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     }
+
 .team-disc {
     font-size: 16px;
     line-height: 1.19;
-        color: var(--secondary-text);
+    color: var(--secondary-text);
 }
 
 /* Футер */
@@ -158,7 +161,7 @@ font-weight: 400;
     line-height: 1.71;
       }
 .mail {
-    color: var(--white-text);
+    color: var(--footer-address);
     text-decoration: none;
     line-height: 1.71;
    }
@@ -181,6 +184,9 @@ font-weight: 400;
 }
 
 /* Портфолио */
+.portfolio-link{
+    text-decoration: none;
+}
 .porfolio-list {
     background-color:var(--bgc-poster);
 }
@@ -196,19 +202,18 @@ font-weight: 400;
         font-size: 16px;
         line-height: 1.88px;
         color: var(--secondary-text);
-
+       
 }
 
 .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-    
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
